@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio - Your Name</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO SECTION WITH VIDEO BACKGROUND -->
+  <header id="hero">
+    <video autoplay loop muted id="video-background" playsinline>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+
+    <nav class="navbar">
+      <span class="logo">My Portfolio</span>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="menu-toggle" id="menu-button" aria-expanded="false">
+        ☰
+      </button>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Unat</h1>
+      <p>Frontend Developer & UI/UX Enthusiast</p>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="panel">
+      <h2>About Me</h2>
+      <p>Enter your about text here...</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="panel">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Responsive Design</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="panel">
+      <h2>Projects</h2>
+
+      <div id="projects-grid">
+        <article class="project-card">
+          <h3>Project One</h3>
+          <p>Description of the project.</p>
+          <a class="btn" href="#">View</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Project Two</h3>
+          <p>Description of the project.</p>
+          <a class="btn" href="#">View</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Project Three</h3>
+          <p>Description of the project.</p>
+          <a class="btn" href="#">View</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="panel">
+      <h2>Contact Me</h2>
+
+      <form id="contact-form-id">
+        <label for="name">Name</label>
+        <input id="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <div id="form-message"></div>
+
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; <span id="year"></span> Unnat @2025</p>
+  </footer>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div id="scroll-progress"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
